@@ -1,18 +1,17 @@
 """EX01 - Chardle - A cute step toward Worlde."""
 __author__ = "730574521"
 
-word: str = str(input("Enter a 5-character word: "))
+word: str = input("Enter a 5-character word: ")
+
 if len(word) != 5:
-    print("Error: Word must contain 5 characters.")
+    print("Error: Word must contain 5 characters")
     exit()
 
-letter: str = str(input("Enter a single character: "))
+letter: str = input("Enter a single character: ")
 if len(letter) != 1:
     print("Error: Character must be a single character.")
     exit()
-else:
-    if word[0] == letter:
-        print("Searching for " + str(letter) + " in " + str(word))
+print("Searching for " + str(letter) + " in " + str(word))
 
 instances_found: int = 0
 if word[0] == letter:
@@ -40,7 +39,6 @@ if instances_found == 2:
 if instances_found == 3:
     print("3 instances of " + str(letter) + " found in " + str(word))
 if instances_found == 4:
-    print("4 instances of " + str(letter) + "found in " + str(word))
+    print("4 instances of " + str(letter) + " found in " + str(word))
 if instances_found == 5:
     print("5 instances of " + str(letter) + " found in " + str(word))
-
