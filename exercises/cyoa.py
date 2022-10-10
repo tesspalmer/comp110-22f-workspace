@@ -1,6 +1,5 @@
 """A quiz that determines how big of a Kanye West fan a user is."""
-__author__: 730574521
-
+__author__: "730574521"
 
 from random import randint
 
@@ -34,7 +33,6 @@ def main() -> None:
     # Game loop
     i: int = 0
     while i < 1:
-        play_again: int = 0
         print(f"Good job, {player}. You have collected {points} points{TONGUE_EMOJI}.")
         print("If you would like to play the easy level, type '1'.")
         print("If you would like to play the hard level, type '2'.")
@@ -97,7 +95,6 @@ def hard(x: int) -> int:
                 points += 100
                 i += 1
                 return points
-
 
 
 if __name__ == "__main__":
