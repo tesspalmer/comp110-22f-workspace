@@ -2,6 +2,7 @@
 __author__ = "730574521"
 
 from dictionary import invert, favorite_color, count
+import pytest
 
 
 def test_empty_dict_invert() -> None:
@@ -19,8 +20,6 @@ def test_multiple_values_2_invert() -> None:
     assert invert({'7am': 'morning', '4pm': 'afternoon', '11pm': 'night'}) == {'morning': '7am', 'afternoon': '4pm', 'night': '11pm'}
 
 
-import pytest
-
 with pytest.raises(KeyError):
     my_dictionary = {'kris': 'jordan', 'michael': 'jordan'}
     invert(my_dictionary)
@@ -36,7 +35,7 @@ def test_multiple_str_dict_favorite_color() -> None:
     assert favorite_color({"Marc": "yellow", "Ezri": "blue", "Kris": "blue"}) == "blue"
 
 
-def test_multiple_str_dict_favorite_color() -> None:
+def test_multiple_str_dict_favorite_2_color() -> None:
     """Tests for a multiple string dictionary (part 2)."""
     assert favorite_color({"Tess": "orange", "Lulu": "green", "Maggie": "green"}) == "green"
 
